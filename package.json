@@ -1,0 +1,21 @@
+{
+  "name": "bookmark-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Bookmark landing page coding challenge](preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i style.css -o src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Star-Mdakane/bookmark-landing-page-tailwindcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Star-Mdakane/bookmark-landing-page-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/Star-Mdakane/bookmark-landing-page-tailwindcss#readme"
+}
