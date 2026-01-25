@@ -208,14 +208,14 @@
     @media (width >= 640px) {
       max-width: 640px;
     }
-    @media (width >= 768px) {
-      max-width: 768px;
+    @media (width >= 992px) {
+      max-width: 992px;
     }
     @media (width >= 1280px) {
       max-width: 1280px;
     }
-    @media (width >= 96rem) {
-      max-width: 96rem;
+    @media (width >= 1536px) {
+      max-width: 1536px;
     }
   }
   .mx-auto {
@@ -284,6 +284,9 @@
   .max-w-360 {
     max-width: calc(var(--spacing) * 360);
   }
+  .max-w-full {
+    max-width: 100%;
+  }
   .min-w-93 {
     min-width: calc(var(--spacing) * 93);
   }
@@ -328,12 +331,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-row {
-    flex-direction: row;
-  }
-  .items-center {
-    align-items: center;
   }
   .justify-between {
     justify-content: space-between;
@@ -444,10 +441,6 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .drop-shadow-none {
-    --tw-drop-shadow:  ;
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -505,9 +498,9 @@
       top: calc(var(--spacing) * 0);
     }
   }
-  .md\:h-32 {
+  .md\:mx-0 {
     @media (width >= 640px) {
-      height: calc(var(--spacing) * 32);
+      margin-inline: calc(var(--spacing) * 0);
     }
   }
   .md\:h-96 {
@@ -523,11 +516,6 @@
   .md\:h-211 {
     @media (width >= 640px) {
       height: calc(var(--spacing) * 211);
-    }
-  }
-  .md\:h-\[72\.4\%\] {
-    @media (width >= 640px) {
-      height: 72.4%;
     }
   }
   .md\:h-\[75\.2\%\] {
@@ -555,42 +543,6 @@
       width: 130%;
     }
   }
-  .md\:translate-x-1\/3 {
-    @media (width >= 640px) {
-      --tw-translate-x: calc(1/3 * 100%);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .md\:translate-x-1\/4 {
-    @media (width >= 640px) {
-      --tw-translate-x: calc(1/4 * 100%);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .md\:translate-x-1\/5 {
-    @media (width >= 640px) {
-      --tw-translate-x: calc(1/5 * 100%);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .md\:translate-x-1\/6 {
-    @media (width >= 640px) {
-      --tw-translate-x: calc(1/6 * 100%);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .md\:translate-x-1\/7 {
-    @media (width >= 640px) {
-      --tw-translate-x: calc(1/7 * 100%);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .md\:translate-x-\[15\%\] {
-    @media (width >= 640px) {
-      --tw-translate-x: 15%;
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
   .md\:translate-x-\[20\%\] {
     @media (width >= 640px) {
       --tw-translate-x: 20%;
@@ -603,16 +555,6 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .md\:gap-18 {
-    @media (width >= 640px) {
-      gap: calc(var(--spacing) * 18);
-    }
-  }
-  .md\:gap-y-0 {
-    @media (width >= 640px) {
-      row-gap: calc(var(--spacing) * 0);
-    }
-  }
   .md\:gap-y-18 {
     @media (width >= 640px) {
       row-gap: calc(var(--spacing) * 18);
@@ -623,28 +565,33 @@
       font-size: 48px;
     }
   }
-  .md\:text-\[12\] {
-    @media (width >= 640px) {
-      color: 12;
+  .lg\:ml-auto {
+    @media (width >= 992px) {
+      margin-left: auto;
     }
   }
   .lg\:flex {
-    @media (width >= 768px) {
+    @media (width >= 992px) {
       display: flex;
     }
   }
   .lg\:hidden {
-    @media (width >= 768px) {
+    @media (width >= 992px) {
       display: none;
     }
   }
+  .lg\:h-117 {
+    @media (width >= 992px) {
+      height: calc(var(--spacing) * 117);
+    }
+  }
   .lg\:w-\[77\%\] {
-    @media (width >= 768px) {
+    @media (width >= 992px) {
       width: 77%;
     }
   }
   .lg\:flex-row {
-    @media (width >= 768px) {
+    @media (width >= 992px) {
       flex-direction: row;
     }
   }

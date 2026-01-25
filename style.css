@@ -5,6 +5,7 @@
     --font-display: "Rubik", sans-serif;
     --breakpoint-sm: 480px;
     --breakpoint-md: 640px;
-    --breakpoint-lg: 768px;
+    --breakpoint-lg: 992px;
     --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
 }
