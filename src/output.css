@@ -251,6 +251,9 @@
   .h-\[68\.83\%\] {
     height: 68.83%;
   }
+  .h-full {
+    height: 100%;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -565,6 +568,16 @@
       font-size: 48px;
     }
   }
+  .lg\:mx-0 {
+    @media (width >= 992px) {
+      margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mr-0 {
+    @media (width >= 992px) {
+      margin-right: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:ml-auto {
     @media (width >= 992px) {
       margin-left: auto;
@@ -585,14 +598,85 @@
       height: calc(var(--spacing) * 117);
     }
   }
+  .lg\:h-full {
+    @media (width >= 992px) {
+      height: 100%;
+    }
+  }
+  .lg\:max-h-117 {
+    @media (width >= 992px) {
+      max-height: calc(var(--spacing) * 117);
+    }
+  }
+  .lg\:w-183\.75 {
+    @media (width >= 992px) {
+      width: calc(var(--spacing) * 183.75);
+    }
+  }
+  .lg\:w-\[42\.35\%\] {
+    @media (width >= 992px) {
+      width: 42.35%;
+    }
+  }
+  .lg\:w-\[57\.65\%\] {
+    @media (width >= 992px) {
+      width: 57.65%;
+    }
+  }
   .lg\:w-\[77\%\] {
     @media (width >= 992px) {
       width: 77%;
     }
   }
+  .lg\:w-\[735px\] {
+    @media (width >= 992px) {
+      width: 735px;
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 992px) {
+      width: 100%;
+    }
+  }
+  .lg\:max-w-\[88\.5\%\] {
+    @media (width >= 992px) {
+      max-width: 88.5%;
+    }
+  }
+  .lg\:translate-x-40 {
+    @media (width >= 992px) {
+      --tw-translate-x: calc(var(--spacing) * 40);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .lg\:flex-row {
     @media (width >= 992px) {
       flex-direction: row;
+    }
+  }
+  .lg\:flex-row-reverse {
+    @media (width >= 992px) {
+      flex-direction: row-reverse;
+    }
+  }
+  .lg\:items-center {
+    @media (width >= 992px) {
+      align-items: center;
+    }
+  }
+  .lg\:justify-start {
+    @media (width >= 992px) {
+      justify-content: flex-start;
+    }
+  }
+  .lg\:self-start {
+    @media (width >= 992px) {
+      align-self: flex-start;
+    }
+  }
+  .lg\:text-left {
+    @media (width >= 992px) {
+      text-align: left;
     }
   }
 }
