@@ -17,6 +17,7 @@
 
 <body>
   <div class="max-w-360 mx-auto min-h-screen min-w-93.75">
+    <!-- Header -->
     <header class="w-[83%] md:w-8/10 lg:w-[77%] mx-auto my-10">
       <div class="container flex justify-between max-w-full">
         <a href="/">
@@ -39,352 +40,382 @@
       </div>
     </header>
 
-    <!-- Hero section -->
+    <main class="mt-10 flex flex-col gap-25">
+      <!-- Hero section -->
 
-    <section id="hero"
-      class="container max-w-full flex flex-col lg:flex-row-reverse my-10 mx-auto gap-y-12 md:h-211 md:gap-y-18 md:mx-0 md:my-20 lg:max-h-117 lg:max-w-[88.5%] lg:ml-auto">
-      <!-- Hero img -->
-      <div class="relative overflow-hidden h-75 md:h-117 lg:w-183.75 lg:h-full">
-        <img
-          class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[75.3%] md:h-96 md:top-0 md:translate-y-0"
-          src="./images/icon-1.svg" alt="">
-        <div
-          class="absolute bottom-0 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 translate-x-17.5 md:h-[75.2%] md:w-[130.2%] md:translate-x-[20%]">
-        </div>
-      </div>
-      <!-- Hero article -->
-      <div class="w-full mx-auto lg:max-h-117 lg:w-[42.35%] lg:mx-0 lg:flex lg:items-center">
-        <div class="flex flex-col gap-6 mx-auto w-[83.4%] md:w-[70.3%] lg:mx-0 lg:w-full">
-          <h1 class="text-[30px] leading-[135%] text-blue-950 text-center font-medium md:text-[48px] lg:text-left">
-            A Simple Bookmark Manager
-          </h1>
-          <p class="text-[15px] leading-[165%] text-blue-950 text-center font-normal lg:text-left">
-            A clean and simple interface to organize your favourite websites. Open a new
-            browser tab and see your sites load instantly. Try it for free.
-          </p>
-          <div class="w-full flex gap-4 justify-center lg:justify-start">
-            <button
-              class="cursor-pointer w-37.5 h-12 border border-transparent rounded-[5px] bg-blue-600 text-[15px] leading-[200%] font-medium text-white hover:bg-white hover:text-blue-600 hover:border-blue-600">
-              Get it on Chrome
-            </button>
-            <button
-              class="cursor-pointer w-37.5 h-12 border border-transparent rounded-[5px] bg-gray-50 text-[15px] leading-[200%] font-medium hover:bg-white hover:text-gray-600 hover:border-gray-600">
-              Get it on Firefox
-            </button>
+      <section id="hero"
+        class="container max-w-full flex flex-col lg:flex-row-reverse mx-auto gap-y-12 md:h-211 md:gap-y-18 md:mx-0 md:my-20 lg:max-h-117 lg:max-w-[88.5%] lg:ml-auto">
+        <!-- Hero img -->
+        <div class="relative overflow-hidden h-75 md:h-117 lg:w-183.75 lg:h-full">
+          <img
+            class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[75.3%] md:h-96 md:top-0 md:translate-y-0"
+            src="./images/icon-1.svg" alt="">
+          <div
+            class="absolute bottom-0 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 translate-x-17.5 md:h-[75.2%] md:w-[130.2%] md:translate-x-[20%]">
           </div>
         </div>
-      </div>
-    </section>
+        <!-- Hero article -->
+        <div class="w-full mx-auto lg:max-h-117 lg:w-[42.35%] lg:mx-0 lg:flex lg:items-center">
+          <div class="flex flex-col gap-6 mx-auto w-[83.4%] md:w-[70.3%] lg:mx-0 lg:w-full">
+            <h1 class="text-[30px] leading-[135%] text-blue-950 text-center font-medium md:text-[48px] lg:text-left">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="text-[15px] leading-[165%] text-blue-950 text-center font-normal lg:text-left">
+              A clean and simple interface to organize your favourite websites. Open a new
+              browser tab and see your sites load instantly. Try it for free.
+            </p>
+            <div class="w-full flex gap-4 justify-center lg:justify-start">
+              <button
+                class="cursor-pointer w-37.5 h-12 border border-transparent rounded-[5px] bg-blue-600 text-[15px] leading-[200%] font-medium text-white hover:bg-white hover:text-blue-600 hover:border-blue-600">
+                Get it on Chrome
+              </button>
+              <button
+                class="cursor-pointer w-37.5 h-12 border border-transparent rounded-[5px] bg-gray-50 text-[15px] leading-[200%] font-medium hover:bg-white hover:text-gray-600 hover:border-gray-600">
+                Get it on Firefox
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Features section -->
+      <!-- Features section -->
 
-    <section id="features">
-      <div class="w-full flex flex-col gap-8 my-25 overflow-hidden md:gap-18">
-        <!-- Section header -->
-        <div class="flex flex-col gap-4 w-[82.9%] mx-auto lg:w-135">
-          <h2 class="text-center text-[30px] font-medium text-blue-950  lg:text-[32px] lg:leading-[125%]">
-            Features
+      <section id="features">
+        <div class="w-full flex flex-col gap-8 overflow-hidden md:gap-18">
+          <!-- Section header -->
+          <div class="flex flex-col gap-4 w-[82.9%] mx-auto lg:w-135">
+            <h2 class="text-center text-[30px] font-medium text-blue-950  lg:text-[32px] lg:leading-[125%]">
+              Features
+            </h2>
+            <p
+              class="text-center text-[15px] leading-[165%] font-normal text-blue-950 md:text-[18px] md:leading-[155%]">
+              Our aim is to make it quick and easy for you to access your favourite websites.
+              Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+          </div>
+          <!-- Features -->
+          <div class="flex flex-col">
+            <!-- features list -->
+            <ul class="w-[82.9%] mx-auto flex flex-col items-center justify-center md:flex-row">
+              <li
+                class="py-4 w-full text-center border border-l-0 border-r-0 border-t-[#495dcf]/20 border-b-[#495dcf]/20 md:border-t-0">
+                <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
+                  href="#">
+                  Simple Bookmarking
+                </a>
+              </li>
+              <li class="py-4 w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20">
+                <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
+                  href="#">
+                  Speedy Searching
+                </a>
+              </li>
+              <li class="py-4 w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20 ">
+                <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
+                  href="#">
+                  Easy Sharing
+                </a>
+              </li>
+            </ul>
+            <!-- bookmark boxes -->
+            <div class="relative w-full h-144 md:h-190.5 lg:h-127">
+              <!-- box 1 -->
+              <div
+                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-100 lg:gap-0">
+                <!-- Image container -->
+                <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
+                  <img
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[69.8%] md:h-[72.4%] md:left-[22%] md:translate-x-0 md:top-[9%] md:translate-y-0 lg:translate-x-14.5"
+                    src="./images/illustration-features-tab-1.svg" alt="">
+                  <div
+                    class="absolute bottom-0 right-0 -translate-x-20 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 md:h-[75.2%] md:w-[130.2%] md:-translate-x-30">
+                  </div>
+                </div>
+                <!-- Article container -->
+                <div class="flex lg:w-1/2 lg:justify-start items-center lg:pl-30">
+                  <div
+                    class="flex flex-col w-[82.9%] h-65.5 mx-auto gap-4 md:gap-6 md:w-112.5 md:h-55 lg:w-[75%] lg:h-55 lg:mx-0">
+                    <h2
+                      class="text-[30px] text-blue-950 text-center leading-[135%] font-medium md:text-[32px] md:leading-[125%]">
+                      Bookmark in one click
+                    </h2>
+                    <p
+                      class="text-[15px] leading-[165%] text-center text-blue-950 font-normal md:text-[18px] md:leading-[155%]">
+                      Organize your bookmarks however you like. Our simple drag-and-drop interface
+                      gives you complete control over how you manage your favourite sites.
+                    </p>
+                    <div class="flex justify-center m:mb-4">
+                      <button
+                        class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
+                        More Info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- box 2 -->
+              <div
+                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
+                <!-- Image container -->
+                <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
+                  <img
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[69.8%] md:h-[72.4%] md:left-[22%] md:translate-x-0 md:top-[9%] md:translate-y-0 lg:translate-x-14.5"
+                    src="./images/illustration-features-tab-2.svg" alt="">
+                  <div
+                    class="absolute bottom-0 right-0 -translate-x-20 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 md:h-[75.2%] md:w-[130.2%] md:-translate-x-30">
+                  </div>
+                </div>
+                <!-- Article container -->
+                <div class="flex lg:w-1/2 lg:justify-start items-center lg:pl-30">
+                  <div class="flex flex-col w-[82.9%] h-65.5 mx-auto gap-4 md:gap-6 md:w-112.5 md:h-55">
+                    <h2
+                      class="text-[30px] text-blue-950 text-center leading-[135%] font-medium md:text-[32px] md:leading-[125%]">
+                      Intelligent search
+                    </h2>
+                    <p
+                      class="text-[15px] leading-[165%] text-center text-blue-950 font-normal md:text-[18px] md:leading-[155%]">
+                      Our powerful search feature will help you find saved sites in no time at all.
+                      No need to trawl through all of your bookmarks.
+                    </p>
+                    <div class="flex justify-center">
+                      <button
+                        class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
+                        More Info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- box 3 -->
+              <div
+                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
+                <!-- Image container -->
+                <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
+                  <img
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[69.8%] md:h-[72.4%] md:left-[22%] md:translate-x-0 md:top-[9%] md:translate-y-0 lg:translate-x-14.5"
+                    src="./images/illustration-features-tab-3.svg" alt="">
+                  <div
+                    class="absolute bottom-0 right-0 -translate-x-20 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 md:h-[75.2%] md:w-[130.2%] md:-translate-x-30">
+                  </div>
+                </div>
+                <!-- Article container -->
+                <div class="flex lg:w-1/2 lg:justify-start items-center lg:pl-30">
+                  <div class="flex flex-col w-[82.9%] h-65.5 mx-auto gap-4 md:gap-6 md:w-112.5 md:h-55">
+                    <h2
+                      class="text-[30px] text-blue-950 text-center leading-[135%] font-medium md:text-[32px] md:leading-[125%]">
+                      Share your bookmarks
+                    </h2>
+                    <p
+                      class="text-[15px] leading-[165%] text-center text-blue-950 font-normal md:text-[18px] md:leading-[155%]">
+                      Easily share your bookmarks and collections with others. Create a shareable
+                      link that you can send at the click of a button.
+                    </p>
+                    <div class="flex justify-center">
+                      <button
+                        class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
+                        More Info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download section -->
+      <section id="download"
+        class="max-w-full mx-auto flex flex-col w-[82.9%] gap-10 md:w-[79.95%] md:gap-16 lg:w-[62.8%] lg:gap-12">
+        <!-- Download header -->
+        <div class="flex flex-col mx-auto gap-4 md:w-135.25 md:h-28">
+          <h2 class="text-[30px] text-blue-950 text-center font-medium leading-[135%]">
+            Download the extension
           </h2>
-          <p class="text-center text-[15px] leading-[165%] font-normal text-blue-950 md:text-[18px] md:leading-[155%]">
-            Our aim is to make it quick and easy for you to access your favourite websites.
-            Your bookmarks sync between your devices so you can access them on the go.
+          <p class="text-[15px] text-blue-950 text-center leading-[165%]">
+            We’ve got more browsers in the pipeline. Please do let us know if you’ve
+            got a favourite you’d like us to prioritize.
           </p>
         </div>
-        <!-- Features -->
-        <div class="flex flex-col">
-          <!-- features list -->
-          <ul class="w-[82.9%] mx-auto flex flex-col items-center justify-center md:flex-row">
-            <li
-              class="py-4 w-full text-center border border-l-0 border-r-0 border-t-[#495dcf]/20 border-b-[#495dcf]/20 md:border-t-0">
-              <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
-                href="#">
-                Simple Bookmarking
-              </a>
-            </li>
-            <li class="py-4 w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20">
-              <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
-                href="#">
-                Speedy Searching
-              </a>
-            </li>
-            <li class="py-4 w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20 ">
-              <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
-                href="#">
-                Easy Sharing
-              </a>
-            </li>
-          </ul>
-          <!-- bookmark boxes -->
-          <div class="relative w-full h-144 md:h-190.5 lg:h-127">
-            <!-- box 1 -->
-            <div
-              class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-100 lg:gap-0">
-              <!-- Image container -->
-              <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
-                <img
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[69.8%] md:h-[72.4%] md:left-[22%] md:translate-x-0 md:top-[9%] md:translate-y-0 lg:translate-x-14.5"
-                  src="./images/illustration-features-tab-1.svg" alt="">
-                <div
-                  class="absolute bottom-0 right-0 -translate-x-20 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 md:h-[75.2%] md:w-[130.2%] md:-translate-x-30">
-                </div>
-              </div>
-              <!-- Article container -->
-              <div class="flex lg:w-1/2 lg:justify-start items-center lg:pl-30">
-                <div
-                  class="flex flex-col w-[82.9%] h-65.5 mx-auto gap-4 md:gap-6 md:w-112.5 md:h-55 lg:w-[75%] lg:h-55 lg:mx-0">
-                  <h2
-                    class="text-[30px] text-blue-950 text-center leading-[135%] font-medium md:text-[32px] md:leading-[125%]">
-                    Bookmark in one click
-                  </h2>
-                  <p
-                    class="text-[15px] leading-[165%] text-center text-blue-950 font-normal md:text-[18px] md:leading-[155%]">
-                    Organize your bookmarks however you like. Our simple drag-and-drop interface
-                    gives you complete control over how you manage your favourite sites.
-                  </p>
-                  <div class="flex justify-center m:mb-4">
-                    <button
-                      class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
-                      More Info
-                    </button>
-                  </div>
-                </div>
+
+        <!-- Download content -->
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-2 lg:gap-8">
+          <!-- Download 1 -->
+          <div class="flex flex-col py-8 rounded-[15px] shadow-[0_10px_20px_-5px] shadow-[#495dcf]/5">
+            <!-- Container -->
+            <div class="flex flex-col items-center gap-8 pb-6 border-b-4 border-dotted border-b-[#495dcf]/20 ">
+              <img class="w-25 h-25" src="./images/logo-chrome.svg" alt="">
+              <div class="flex flex-col gap-2 items-center">
+                <h3 class="text-[24px] text-blue-950 font-medium leading-[200%]">
+                  Add to Chrome
+                </h3>
+                <p class="text-[15px] text-blue-950 leading-[165%] font-normal">
+                  Minimum version 62
+                </p>
               </div>
             </div>
-            <!-- box 2 -->
-            <div
-              class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
-              <!-- Image container -->
-              <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
-                <img
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[69.8%] md:h-[72.4%] md:left-[22%] md:translate-x-0 md:top-[9%] md:translate-y-0 lg:translate-x-14.5"
-                  src="./images/illustration-features-tab-2.svg" alt="">
-                <div
-                  class="absolute bottom-0 right-0 -translate-x-20 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 md:h-[75.2%] md:w-[130.2%] md:-translate-x-30">
-                </div>
-              </div>
-              <!-- Article container -->
-              <div class="flex lg:w-1/2 lg:justify-start items-center lg:pl-30">
-                <div class="flex flex-col w-[82.9%] h-65.5 mx-auto gap-4 md:gap-6 md:w-112.5 md:h-55">
-                  <h2
-                    class="text-[30px] text-blue-950 text-center leading-[135%] font-medium md:text-[32px] md:leading-[125%]">
-                    Intelligent search
-                  </h2>
-                  <p
-                    class="text-[15px] leading-[165%] text-center text-blue-950 font-normal md:text-[18px] md:leading-[155%]">
-                    Our powerful search feature will help you find saved sites in no time at all.
-                    No need to trawl through all of your bookmarks.
-                  </p>
-                  <div class="flex justify-center">
-                    <button
-                      class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
-                      More Info
-                    </button>
-                  </div>
-                </div>
+            <!-- Button -->
+            <div class="flex justify-center mt-6">
+              <button
+                class="w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Download 2 -->
+          <div class="flex flex-col py-8 rounded-[15px] shadow-[0_10px_20px_-5px] shadow-[#495dcf]/5 lg:mt-10">
+            <!-- Container -->
+            <div class="flex flex-col items-center gap-8 pb-6 border-b-4 border-dotted border-b-[#495dcf]/20 ">
+              <img class="w-25 h-25" src="./images/logo-firefox.svg" alt="">
+              <div class="flex flex-col gap-2 items-center">
+                <h3 class="text-[24px] text-blue-950 font-medium leading-[200%]">
+                  Add to Firefox
+                </h3>
+                <p class="text-[15px] text-blue-950 leading-[165%] font-normal">
+                  Minimum version 55
+                </p>
               </div>
             </div>
-            <!-- box 3 -->
-            <div
-              class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
-              <!-- Image container -->
-              <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
-                <img
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[82.7%] h-[68.83%] z-3 md:w-[69.8%] md:h-[72.4%] md:left-[22%] md:translate-x-0 md:top-[9%] md:translate-y-0 lg:translate-x-14.5"
-                  src="./images/illustration-features-tab-3.svg" alt="">
-                <div
-                  class="absolute bottom-0 right-0 -translate-x-20 w-[153.9%] h-[67.7%] rounded-l-full rounded-r-full bg-blue-600 md:h-[75.2%] md:w-[130.2%] md:-translate-x-30">
-                </div>
+            <!-- Button -->
+            <div class="flex justify-center mt-6">
+              <button
+                class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <!-- Download 3 -->
+          <div class="flex flex-col py-8 rounded-[15px] shadow-[0_10px_20px_-5px] shadow-[#495dcf]/5 lg:mt-20">
+            <!-- Container -->
+            <div class="flex flex-col items-center gap-8 pb-6 border-b-4 border-dotted border-b-[#495dcf]/20 ">
+              <img class="w-25 h-25" src="./images/logo-opera.svg" alt="">
+              <div class="flex flex-col gap-2 items-center">
+                <h3 class="text-[24px] text-blue-950 font-medium leading-[200%]">
+                  Add to Opera
+                </h3>
+                <p class="text-[15px] text-blue-950 leading-[165%] font-normal">
+                  Minimum version 46
+                </p>
               </div>
-              <!-- Article container -->
-              <div class="flex lg:w-1/2 lg:justify-start items-center lg:pl-30">
-                <div class="flex flex-col w-[82.9%] h-65.5 mx-auto gap-4 md:gap-6 md:w-112.5 md:h-55">
-                  <h2
-                    class="text-[30px] text-blue-950 text-center leading-[135%] font-medium md:text-[32px] md:leading-[125%]">
-                    Share your bookmarks
-                  </h2>
-                  <p
-                    class="text-[15px] leading-[165%] text-center text-blue-950 font-normal md:text-[18px] md:leading-[155%]">
-                    Easily share your bookmarks and collections with others. Create a shareable
-                    link that you can send at the click of a button.
-                  </p>
-                  <div class="flex justify-center">
-                    <button
-                      class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
-                      More Info
-                    </button>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <!-- Button -->
+            <div class="flex justify-center mt-6">
+              <button
+                class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
+                Add & Install Extension
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Download section -->
-    <section id="download"
-      class="max-w-full my-25 mx-auto flex flex-col w-[82.9%] h-351 gap-10 md:w-[79.95%] md:h-110 md:gap-16 lg:w-[62.8%] lg:h-153 lg:gap-12">
-      <!-- Download header -->
-      <div class="flex flex-col mx-auto gap-4 md:w-135.25 md:h-28">
-        <h2 class="text-[30px] text-blue-950 text-center font-medium leading-[135%]">
-          Download the extension
-        </h2>
-        <p class="text-[15px] text-blue-950 text-center leading-[165%]">
-          We’ve got more browsers in the pipeline. Please do let us know if you’ve
-          got a favourite you’d like us to prioritize.
-        </p>
-      </div>
-
-      <!-- Download content -->
-      <div class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-2 lg:gap-8">
-        <!-- Download 1 -->
-        <div class="flex flex-col py-8 rounded-[15px] shadow-[0_10px_20px_-5px] shadow-[#495dcf]/5">
-          <!-- Container -->
-          <div class="flex flex-col items-center gap-8 pb-6 border-b-4 border-dotted border-b-[#495dcf]/20 ">
-            <img class="w-25 h-25" src="./images/logo-chrome.svg" alt="">
-            <div class="flex flex-col gap-2 items-center">
-              <h3 class="text-[24px] text-blue-950 font-medium leading-[200%]">
-                Add to Chrome
-              </h3>
-              <p class="text-[15px] text-blue-950 leading-[165%] font-normal">
-                Minimum version 62
-              </p>
-            </div>
-          </div>
-          <!-- Button -->
-          <div class="flex justify-center mt-6">
+      <!-- Frequently asked questions -->
+      <section id="faq" class="max-w-full mx-auto flex flex-col gap-14 w-[82.9%] md:w-135">
+        <!-- faq header -->
+        <div class="flex flex-col mx-auto gap-4 md:w-135.25 md:h-28">
+          <h2 class="text-[30px] text-blue-950 text-center font-medium leading-[135%]">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-[15px] text-blue-950 text-center leading-[165%]">
+            Here are some of our FAQs. If you have any other questions you’d like
+            answered please feel free to email us.
+          </p>
+        </div>
+        <!-- faq accordion -->
+        <ul class="w-full flex flex-col">
+          <!-- faq 1 -->
+          <li class="w-full border-b border-t border-t-[#495dcf]/20 border-b-[#495dcf]/20">
             <button
-              class="w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
-              Add & Install Extension
+              class="peer w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              <p>What is Bookmark?</p>
+              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
             </button>
-          </div>
-        </div>
-
-
-        <!-- Download 2 -->
-        <div class="flex flex-col py-8 rounded-[15px] shadow-[0_10px_20px_-5px] shadow-[#495dcf]/5 lg:mt-10">
-          <!-- Container -->
-          <div class="flex flex-col items-center gap-8 pb-6 border-b-4 border-dotted border-b-[#495dcf]/20 ">
-            <img class="w-25 h-25" src="./images/logo-firefox.svg" alt="">
-            <div class="flex flex-col gap-2 items-center">
-              <h3 class="text-[24px] text-blue-950 font-medium leading-[200%]">
-                Add to Firefox
-              </h3>
-              <p class="text-[15px] text-blue-950 leading-[165%] font-normal">
-                Minimum version 55
-              </p>
+            <div
+              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
             </div>
-          </div>
-          <!-- Button -->
-          <div class="flex justify-center mt-6">
+          </li>
+          <!-- faq 2 -->
+          <li class="w-full border-b border-b-[#495dcf]/20">
             <button
-              class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
-              Add & Install Extension
+              class="peer w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              <p>How can I request a new browser?</p>
+              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
             </button>
-          </div>
-        </div>
-        <!-- Download 3 -->
-        <div class="flex flex-col py-8 rounded-[15px] shadow-[0_10px_20px_-5px] shadow-[#495dcf]/5 lg:mt-20">
-          <!-- Container -->
-          <div class="flex flex-col items-center gap-8 pb-6 border-b-4 border-dotted border-b-[#495dcf]/20 ">
-            <img class="w-25 h-25" src="./images/logo-opera.svg" alt="">
-            <div class="flex flex-col gap-2 items-center">
-              <h3 class="text-[24px] text-blue-950 font-medium leading-[200%]">
-                Add to Opera
-              </h3>
-              <p class="text-[15px] text-blue-950 leading-[165%] font-normal">
-                Minimum version 46
-              </p>
+            <div
+              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
             </div>
-          </div>
-          <!-- Button -->
-          <div class="flex justify-center mt-6">
+          </li>
+          <!-- faq 3 -->
+          <li class="peer w-full border-b border-b-[#495dcf]/20">
             <button
-              class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
-              Add & Install Extension
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              <p>Is there a mobile app?</p>
+              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
             </button>
-          </div>
+            <div
+              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </div>
+          </li>
+          <!-- faq 4 -->
+          <li class="peer w-full border-b border-b-[#495dcf]/20">
+            <button
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              <p>What about other Chromium browsers?</p>
+              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
+            </button>
+            <div
+              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </div>
+          </li>
+        </ul>
+        <!-- faq button -->
+        <div class="flex justify-center m:mb-4">
+          <button class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
+            More Info
+          </button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Frequently asked questions -->
-    <section id="faq" class="max-w-full mx-auto my-25 flex flex-col gap-14 w-[82.9%] md:w-135">
-      <!-- faq header -->
-      <div class="flex flex-col mx-auto gap-4 md:w-135.25 md:h-28">
-        <h2 class="text-[30px] text-blue-950 text-center font-medium leading-[135%]">
-          Frequently Asked Questions
-        </h2>
-        <p class="text-[15px] text-blue-950 text-center leading-[165%]">
-          Here are some of our FAQs. If you have any other questions you’d like
-          answered please feel free to email us.
-        </p>
-      </div>
-      <!-- faq accordion -->
-      <ul class="w-full flex flex-col">
-        <!-- faq 1 -->
-        <li class="w-full border-b border-t border-t-[#495dcf]/20 border-b-[#495dcf]/20">
-          <button
-            class="peer w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
-            <p>What is Bookmark?</p>
-            <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
-          </button>
-          <div
-            class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+      <!-- Call to action -->
+      <section id="cta" class="w-full bg-blue-600">
+        <!-- cta container -->
+        <div class="flex flex-col gap-8 mx-auto my-14 w-[82.9%] md:w-110.5">
+          <!-- cta content -->
+          <div class="w-full flex flex-col">
+            <p class="text-[12px] md:text-[14px] text-white text-center leading-[300%] tracking-[5px] font-medium">
+              35,000+ already joined
+            </p>
+            <h2 class="text-[30px] md:text-[32px] text-white text-center font-medium leading-[135%] md:leading-[125%]">
+              Stay up-to-date with what we’re doing
+            </h2>
           </div>
-        </li>
-        <!-- faq 2 -->
-        <li class="w-full border-b border-b-[#495dcf]/20">
-          <button
-            class="peer w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
-            <p>How can I request a new browser?</p>
-            <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
-          </button>
-          <div
-            class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-          </div>
-        </li>
-        <!-- faq 3 -->
-        <li class="peer w-full border-b border-b-[#495dcf]/20">
-          <button
-            class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
-            <p>Is there a mobile app?</p>
-            <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
-          </button>
-          <div
-            class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-            Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-            sollicitudin ex et ultricies bibendum.
-          </div>
-        </li>
-        <!-- faq 4 -->
-        <li class="peer w-full border-b border-b-[#495dcf]/20">
-          <button
-            class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
-            <p>What about other Chromium browsers?</p>
-            <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
-          </button>
-          <div
-            class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-            vitae neque eget nisl gravida pellentesque non ut velit.
-          </div>
-        </li>
-      </ul>
-      <!-- faq button -->
-      <div class="flex justify-center m:mb-4">
-        <button class="w-28.5 h-12 rounded-[5px] bg-blue-600 text-white text-[15px] leading-[200%] font-normal">
-          More Info
-        </button>
-      </div>
-    </section>
+          <!-- cta form -->
+          <form action="" class="w-full grid gap-4 grid-cols-1 md:grid-cols-[2fr_1fr]">
+            <input type="email" name="email" id="email" placeholder="Enter your email address"
+              class="h-12 px-4 bg-white rounded-[5px] shadow-[0_8px_8px_-4px] shadow-black/20 outline-none">
+            <button
+              class="h-12 bg-red-400 rounded-[5px] text-[15px] text-white leading-[200%] font-medium shadow-[0_8px_8px_-4px] shadow-black/20 hover:text-red-400 hover:bg-white">
+              Contact Us
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+
   </div>
 
 
@@ -396,27 +427,7 @@
   Login
 -->
 
-  <!--  -->
-
-  <!-- Question 3 -->
-  <!--  -->
-
-  <!-- Answer 3 -->
-  <!--  -->
-
-  <!-- Question 4 -->
-  <!--  -->
-
-  <!-- Answer 4 -->
   <!-- 
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
 
   Features
   Pricing
