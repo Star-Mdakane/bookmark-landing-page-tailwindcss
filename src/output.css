@@ -21,6 +21,8 @@
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-display: "Rubik", sans-serif;
@@ -208,8 +210,14 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
+  .z-0 {
+    z-index: 0;
+  }
   .z-3 {
     z-index: 3;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .container {
     width: 100%;
@@ -243,9 +251,6 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
-  }
-  .mr-auto {
-    margin-right: auto;
   }
   .contents {
     display: contents;
@@ -477,6 +482,10 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -531,9 +540,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-clip-text {
-    background-clip: text;
   }
   .fill-white {
     fill: var(--color-white);
@@ -667,6 +673,11 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
@@ -700,13 +711,6 @@
     &:hover {
       @media (hover: hover) {
         border-color: var(--color-red-400);
-      }
-    }
-  }
-  .hover\:bg-red-400 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-red-400);
       }
     }
   }
@@ -825,11 +829,6 @@
   .md\:w-8\/10 {
     @media (width >= 640px) {
       width: calc(8/10 * 100%);
-    }
-  }
-  .md\:w-18 {
-    @media (width >= 640px) {
-      width: calc(var(--spacing) * 18);
     }
   }
   .md\:w-110\.5 {

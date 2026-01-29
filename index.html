@@ -98,29 +98,29 @@
             <!-- features list -->
             <ul class="w-[82.9%] mx-auto flex flex-col items-center justify-center md:flex-row">
               <li
-                class="py-4 w-full text-center border border-l-0 border-r-0 border-t-[#495dcf]/20 border-b-[#495dcf]/20 md:border-t-0">
-                <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
-                  href="#">
+                class="w-full text-center border border-l-0 border-r-0 border-t-[#495dcf]/20 border-b-[#495dcf]/20 md:border-t-0">
+                <button data-target="box1"
+                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400  border-t-0 border-r-0 border-l-0 border-b-red-400">
                   Simple Bookmarking
-                </a>
+                </button>
               </li>
-              <li class="py-4 w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20">
-                <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
-                  href="#">
+              <li class="w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20">
+                <button data-target="box2"
+                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400 border-t-0 border-r-0 border-l-0 border-b-red-400">
                   Speedy Searching
-                </a>
+                </button>
               </li>
-              <li class="py-4 w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20 ">
-                <a class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal border-0 hover:text-red-400 target:border-4 border-t-0 border-r-0 border-l-0 border-b-red-400"
-                  href="#">
+              <li class="w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20 ">
+                <button data-target="box3"
+                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400 border-t-0 border-r-0 border-l-0 border-b-red-400">
                   Easy Sharing
-                </a>
+                </button>
               </li>
             </ul>
             <!-- bookmark boxes -->
             <div class="relative w-full h-144 md:h-190.5 lg:h-127">
               <!-- box 1 -->
-              <div
+              <div id="box1"
                 class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-100 lg:gap-0">
                 <!-- Image container -->
                 <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
@@ -154,7 +154,7 @@
                 </div>
               </div>
               <!-- box 2 -->
-              <div
+              <div id="box2"
                 class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
                 <!-- Image container -->
                 <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
@@ -187,7 +187,7 @@
                 </div>
               </div>
               <!-- box 3 -->
-              <div
+              <div id="box3"
                 class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
                 <!-- Image container -->
                 <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
