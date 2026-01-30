@@ -16,7 +16,64 @@
 </head>
 
 <body>
-  <div class="max-w-360 mx-auto min-h-screen min-w-93.75">
+  <div class="group/parent relative max-w-360 mx-auto min-h-screen min-w-93.75">
+    <!-- Overlay -->
+    <div id="overlay"
+      class="absolute translate-x-full group-[.menu]/parent:translate-x-0 h-screen w-screen bg-blue-950/95 inset-0 -top-10 z-50 py-11 transition-transform duration-300 ease-in-out">
+      <!-- Overlay container -->
+      <div id="overlay-container" class="mx-auto w-[82%] h-full flex flex-col items-center justify-between">
+        <!-- Overlay header -->
+        <div class="w-full flex justify-between">
+          <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <path
+                d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+                fill="#fff" fill-rule="nonzero" />
+              <g>
+                <circle fill="#fff" cx="12.5" cy="12.5" r="12.5" />
+                <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#020618" />
+              </g>
+            </g>
+          </svg>
+          <button id="close-btn" class="cursor-pointer">
+            <img class="h-3.75 w-3.75" src="./images/icon-close.svg" alt="">
+          </button>
+        </div>
+        <!-- Overlay nav -->
+
+        <ul class="w-full mt-8 flex flex-col items-center">
+          <li class="py-8 w-full text-center border-b border-t border-t-white border-b-white">
+            <a class="text-[20px] leading-4.25 tracking-[2.31px] font-normal text-white  uppercase"
+              href="#">Features</a>
+          </li>
+          <li class="py-8 w-full text-center border-b border-b-white">
+            <a class="text-[20px] leading-4.25 tracking-[2.31px] font-normal text-white  uppercase" href="#">Pricing</a>
+          </li>
+          <li class="py-8 w-full text-center border-b border-b-white">
+            <a class="text-[20px] leading-4.25 tracking-[2.31px] font-normal text-white  uppercase" href="#">Contact</a>
+          </li>
+          <li class="py-8 w-full text-center">
+            <a class="w-full block py-3.5 text-[20px] leading-4.25 tracking-[2.31px] font-normal text-white  uppercase border-3 border-white"
+              href="#">Login</a>
+          </li>
+        </ul>
+        </nav>
+
+        <!-- Overlay socials -->
+        <div class="mt-auto flex justify-center items-center gap-10 w-22 h-6">
+          <svg class="fill-white  stroke-white " xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path fill-rule="evenodd"
+              d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+          </svg>
+          <svg class="fill-white  stroke-white " xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+            <path fill-rule="evenodd"
+              d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
     <!-- Header -->
     <header class="w-[83%] md:w-8/10 lg:w-[77%] mx-auto my-10">
       <div class="container flex justify-between max-w-full">
@@ -25,16 +82,17 @@
         </a>
         <nav class="hidden lg:flex lg:ml-auto w-111.75">
           <ul class="flex w-full gap-12 justify-between">
-            <li><a class="text-sm text-blue-950 hover:text-red-400 uppercase" href="#features">Features</a></li>
-            <li><a class="text-sm text-blue-950 hover:text-red-400 uppercase" href="#">Pricing</a></li>
-            <li><a class="text-sm text-blue-950 hover:text-red-400 uppercase" href="#cta">Contact</a></li>
+            <li><a class="text-sm text-blue-950 hover:text-red-400 uppercase transition" href="#features">Features</a>
+            </li>
+            <li><a class="text-sm text-blue-950 hover:text-red-400 uppercase transition" href="#">Pricing</a></li>
+            <li><a class="text-sm text-blue-950 hover:text-red-400 uppercase transition" href="#cta">Contact</a></li>
             <li><a
-                class="text-sm text-white border border-transparent bg-red-400 uppercase py-2 px-8 rounded-[5px] hover:bg-white hover:text-red-400 hover:border-red-400"
+                class="text-sm text-white border border-transparent bg-red-400 uppercase py-2 px-8 rounded-[5px] hover:bg-white hover:text-red-400 hover:border-red-400 transition"
                 href="#">Login</a>
             </li>
           </ul>
         </nav>
-        <button aria-label="Toggle menu" class="cursor-pointer lg:hidden">
+        <button id="burger-btn" aria-label="Toggle menu" class="cursor-pointer lg:hidden">
           <img src="./images/icon-hamburger.svg" alt="menu button">
         </button>
       </div>
@@ -100,19 +158,19 @@
               <li
                 class="w-full text-center border border-l-0 border-r-0 border-t-[#495dcf]/20 border-b-[#495dcf]/20 md:border-t-0">
                 <button data-target="box1"
-                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400  border-t-0 border-r-0 border-l-0 border-b-red-400">
+                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400  border-t-0 border-r-0 border-l-0 border-b-red-400 transition">
                   Simple Bookmarking
                 </button>
               </li>
               <li class="w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20">
                 <button data-target="box2"
-                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400 border-t-0 border-r-0 border-l-0 border-b-red-400">
+                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400 border-t-0 border-r-0 border-l-0 border-b-red-400 transition">
                   Speedy Searching
                 </button>
               </li>
               <li class="w-full text-center border border-l-0 border-r-0 border-t-0 border-b-[#495dcf]/20 ">
                 <button data-target="box3"
-                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400 border-t-0 border-r-0 border-l-0 border-b-red-400">
+                  class="py-4 text-[15px] leading-[165%] text-blue-950 font-normal hover:text-red-400 border-t-0 border-r-0 border-l-0 border-b-red-400 transition">
                   Easy Sharing
                 </button>
               </li>
@@ -121,7 +179,7 @@
             <div class="relative w-full h-144 md:h-190.5 lg:h-127">
               <!-- box 1 -->
               <div id="box1"
-                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-100 lg:gap-0">
+                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-100 lg:gap-0 transiition">
                 <!-- Image container -->
                 <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
                   <img
@@ -155,7 +213,7 @@
               </div>
               <!-- box 2 -->
               <div id="box2"
-                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
+                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0 transition">
                 <!-- Image container -->
                 <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
                   <img
@@ -188,7 +246,7 @@
               </div>
               <!-- box 3 -->
               <div id="box3"
-                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0">
+                class="w-full h-full flex flex-col gap-8 lg:flex-row mx-auto max-w-full md:gap-16 absolute top-0 left-0 opacity-0 lg:gap-0 transition">
                 <!-- Image container -->
                 <div class="w-full relative justify-between h-70.5 md:h-119.5 lg:w-[49%] lg:h-full">
                   <img
@@ -257,7 +315,7 @@
             <!-- Button -->
             <div class="flex justify-center mt-6">
               <button
-                class="w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
+                class="w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600 transition">
                 Add & Install Extension
               </button>
             </div>
@@ -281,7 +339,7 @@
             <!-- Button -->
             <div class="flex justify-center mt-6">
               <button
-                class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
+                class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600 transition">
                 Add & Install Extension
               </button>
             </div>
@@ -303,7 +361,7 @@
             <!-- Button -->
             <div class="flex justify-center mt-6">
               <button
-                class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600">
+                class=" w-58 h-12 py-2 bg-blue-600 text-white text-[15px] leading-[200%] font-medium rounded-[5px] border border-transparent hover:text-blue-600 hover:bg-white hover:border-blue-600 transition">
                 Add & Install Extension
               </button>
             </div>
@@ -328,16 +386,16 @@
           <!-- faq 1 -->
           <li class="group w-full border-b border-t border-t-[#495dcf]/20 border-b-[#495dcf]/20">
             <button data-accordion-header
-              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400 transition">
               <p>What is Bookmark?</p>
               <svg
-                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85 transition"
                 xmlns="http://www.w3.org/2000/svg" width="18" height="12">
                 <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
               </svg>
             </button>
             <div
-              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%] transition">
               A bookmark is either a physical marker (like card or ribbon) placed between book pages to hold your spot,
               or a digital tool in a web browser that saves a website URL for quick, future access.
             </div>
@@ -345,16 +403,16 @@
           <!-- faq 2 -->
           <li class="group w-full border-b border-b-[#495dcf]/20">
             <button data-accordion-header
-              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400 transition">
               <p>How can I request a new browser?</p>
               <svg
-                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85 transition"
                 xmlns="http://www.w3.org/2000/svg" width="18" height="12">
                 <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
               </svg>
             </button>
             <div
-              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%] transition">
               Requesting or installing a new web browser is a straightforward process that involves downloading the
               software from an official source and setting it as your default. You do not need to uninstall your current
               browser to try a new one.
@@ -363,16 +421,16 @@
           <!-- faq 3 -->
           <li class="group w-full border-b border-b-[#495dcf]/20">
             <button data-accordion-header
-              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400 transition">
               <p>Is there a mobile app?</p>
               <svg
-                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85 transition"
                 xmlns="http://www.w3.org/2000/svg" width="18" height="12">
                 <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
               </svg>
             </button>
             <div
-              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%] transition">
               Yes, there are many dedicated mobile apps for browsing the internet, available for both Android and iOS
               devices. Major browsers like Google Chrome, Firefox, Brave, and Microsoft Edge offer mobile versions
               designed for fast, secure, and synced browsing on phones and tablets.
@@ -381,16 +439,16 @@
           <!-- faq 4 -->
           <li class="group w-full border-b border-b-[#495dcf]/20">
             <button data-accordion-header
-              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400 transition">
               <p>What about other Chromium browsers?</p>
               <svg
-                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85 transition"
                 xmlns="http://www.w3.org/2000/svg" width="18" height="12">
                 <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
               </svg>
             </button>
             <div
-              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%] transition">
               Other Chromium-based browsers like Microsoft Edge, Brave, Opera, and Vivaldi offer the same speed and
               extension support as Chrome but with unique, privacy-focused, or highly customizable features. They are
               popular alternatives that often include built-in ad blockers, VPNs, or improved resource management.
@@ -424,13 +482,14 @@
               <input type="email" name="email" id="email" placeholder="Enter your email address"
                 class="h-12 px-4 bg-white rounded-[5px] shadow-[0_8px_8px_-4px] shadow-black/20 outline-none">
               <p
-                class="hidden group-[.err]:block text-[10px] leading-[120%] tracking-[-0.25px] font-medium italic p-1 text-white bg-red-400 rounded-b-[5px]">
+                class="hidden group-[.err]:block text-[10px] leading-[120%] tracking-[-0.25px] font-medium italic p-1 text-white bg-red-400 rounded-b-[5px] transition">
                 Whoops, make sure t's an email
               </p>
-              <img class="hidden group-[.err]:block absolute right-3 top-3" src="./images/icon-error.svg" alt="">
+              <img class="hidden group-[.err]:block absolute right-3 top-3 transition" src="./images/icon-error.svg"
+                alt="">
             </div>
             <button type="submit"
-              class="h-12 bg-red-400 rounded-[5px] text-[15px] text-white leading-[200%] font-medium shadow-[0_8px_8px_-4px] shadow-black/20 hover:text-red-400 hover:bg-white">
+              class="h-12 bg-red-400 rounded-[5px] text-[15px] text-white leading-[200%] font-medium shadow-[0_8px_8px_-4px] shadow-black/20 hover:text-red-400 hover:bg-white transition">
               Contact Us
             </button>
           </form>
@@ -446,20 +505,22 @@
         </a>
         <nav class="flex lg:mr-auto">
           <ul class="flex flex-col md:flex-row w-full gap-6  items-center justify-between">
-            <li><a class="text-[15px] leading-[165%] text-white hover:text-red-400 uppercase"
+            <li><a class="text-[15px] leading-[165%] text-white hover:text-red-400 uppercase transition"
                 href="#features">Features</a></li>
-            <li><a class="text-[15px] leading-[165%] text-white hover:text-red-400 uppercase" href="#">Pricing</a></li>
-            <li><a class="text-[15px] leading-[165%] text-white hover:text-red-400 uppercase" href="#cta">Contact</a>
+            <li><a class="text-[15px] leading-[165%] text-white hover:text-red-400 uppercase transition"
+                href="#">Pricing</a></li>
+            <li><a class="text-[15px] leading-[165%] text-white hover:text-red-400 uppercase transition"
+                href="#cta">Contact</a>
             </li>
           </ul>
         </nav>
         <div class="flex justify-center items-center gap-10 w-22 h-6">
-          <svg class="fill-white hover:fill-red-400 stroke-white hover:stroke-red-400"
+          <svg class="fill-white hover:fill-red-400 stroke-white hover:stroke-red-400 transition"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path fill-rule="evenodd"
               d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
           </svg>
-          <svg class="fill-white hover:fill-red-400 stroke-white hover:stroke-red-400"
+          <svg class="fill-white hover:fill-red-400 stroke-white hover:stroke-red-400 transition"
             xmlns="http://www.w3.org/2000/svg" width="24" height="20">
             <path fill-rule="evenodd"
               d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
