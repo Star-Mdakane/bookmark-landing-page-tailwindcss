@@ -1,5 +1,7 @@
 const buttons = document.querySelectorAll("button[data-target]");
 const boxes = document.querySelectorAll("div[id^='box']");
+const headers = document.querySelectorAll("[data-accordion-header]");
+const form = document.getElementById("cta-form");
 
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -17,3 +19,32 @@ buttons.forEach(btn => {
         });
     });
 });
+
+headers.forEach(header => {
+    header.addEventListener("click", () => {
+        header.parentElement.classList.toggle("open");
+    });
+});
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let isValid = true;
+
+    const email = form.querySelector("[name='email']");
+    const emailValue = email.value;
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailValue) || !emailValue.trim()) {
+        isValid = false;
+    }
+
+    if (isValid) {
+        console.log('success');
+        email.parentElement.classList.remove("err");
+    }
+    else {
+        email.parentElement.classList.add("err");
+    }
+})

@@ -326,58 +326,74 @@
         <!-- faq accordion -->
         <ul class="w-full flex flex-col">
           <!-- faq 1 -->
-          <li class="w-full border-b border-t border-t-[#495dcf]/20 border-b-[#495dcf]/20">
-            <button
-              class="peer w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+          <li class="group w-full border-b border-t border-t-[#495dcf]/20 border-b-[#495dcf]/20">
+            <button data-accordion-header
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
               <p>What is Bookmark?</p>
-              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
+              <svg
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
             </button>
             <div
-              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              A bookmark is either a physical marker (like card or ribbon) placed between book pages to hold your spot,
+              or a digital tool in a web browser that saves a website URL for quick, future access.
             </div>
           </li>
           <!-- faq 2 -->
-          <li class="w-full border-b border-b-[#495dcf]/20">
-            <button
-              class="peer w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
+          <li class="group w-full border-b border-b-[#495dcf]/20">
+            <button data-accordion-header
+              class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
               <p>How can I request a new browser?</p>
-              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
+              <svg
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
             </button>
             <div
-              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              Requesting or installing a new web browser is a straightforward process that involves downloading the
+              software from an official source and setting it as your default. You do not need to uninstall your current
+              browser to try a new one.
             </div>
           </li>
           <!-- faq 3 -->
-          <li class="peer w-full border-b border-b-[#495dcf]/20">
-            <button
+          <li class="group w-full border-b border-b-[#495dcf]/20">
+            <button data-accordion-header
               class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
               <p>Is there a mobile app?</p>
-              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
+              <svg
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
             </button>
             <div
-              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-              sollicitudin ex et ultricies bibendum.
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              Yes, there are many dedicated mobile apps for browsing the internet, available for both Android and iOS
+              devices. Major browsers like Google Chrome, Firefox, Brave, and Microsoft Edge offer mobile versions
+              designed for fast, secure, and synced browsing on phones and tablets.
             </div>
           </li>
           <!-- faq 4 -->
-          <li class="peer w-full border-b border-b-[#495dcf]/20">
-            <button
+          <li class="group w-full border-b border-b-[#495dcf]/20">
+            <button data-accordion-header
               class="w-full py-4 text-[15px] md:t-[18px] flex justify-between items-center text-blue-950 font-normal leading-[165%] md:leadding-[155%] hover:text-red-400">
               <p>What about other Chromium browsers?</p>
-              <img class="w-4 h-2" src="./images/icon-arrow.svg" alt="">
+              <svg
+                class="w-5 h-3 group-[.open]:rotate-180 group-hover:text-blue-950 group-[.open]:text-red-400 scale-85"
+                xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
             </button>
             <div
-              class="hidden peer-open:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
-              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-              vitae neque eget nisl gravida pellentesque non ut velit.
+              class="hidden group-[.open]:block text-[15px] md:text-[16px] pb-4 text-blue-950 font-light leading-[200%] md:leading-[225%]">
+              Other Chromium-based browsers like Microsoft Edge, Brave, Opera, and Vivaldi offer the same speed and
+              extension support as Chrome but with unique, privacy-focused, or highly customizable features. They are
+              popular alternatives that often include built-in ad blockers, VPNs, or improved resource management.
             </div>
           </li>
         </ul>
@@ -403,10 +419,17 @@
             </h2>
           </div>
           <!-- cta form -->
-          <form action="" class="w-full grid gap-4 grid-cols-1 md:grid-cols-[2fr_1fr]">
-            <input type="email" name="email" id="email" placeholder="Enter your email address"
-              class="h-12 px-4 bg-white rounded-[5px] shadow-[0_8px_8px_-4px] shadow-black/20 outline-none">
-            <button
+          <form novalidate id="cta-form" action="" class="w-full grid gap-4 grid-cols-1 md:grid-cols-[2fr_1fr]">
+            <div class="group flex flex-col relative">
+              <input type="email" name="email" id="email" placeholder="Enter your email address"
+                class="h-12 px-4 bg-white rounded-[5px] shadow-[0_8px_8px_-4px] shadow-black/20 outline-none">
+              <p
+                class="hidden group-[.err]:block text-[10px] leading-[120%] tracking-[-0.25px] font-medium italic p-1 text-white bg-red-400 rounded-b-[5px]">
+                Whoops, make sure t's an email
+              </p>
+              <img class="hidden group-[.err]:block absolute right-3 top-3" src="./images/icon-error.svg" alt="">
+            </div>
+            <button type="submit"
               class="h-12 bg-red-400 rounded-[5px] text-[15px] text-white leading-[200%] font-medium shadow-[0_8px_8px_-4px] shadow-black/20 hover:text-red-400 hover:bg-white">
               Contact Us
             </button>
