@@ -196,9 +196,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -216,9 +213,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -256,9 +250,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .my-8 {
-    margin-block: calc(var(--spacing) * 8);
-  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
@@ -292,9 +283,6 @@
   .hidden {
     display: none;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .table {
     display: table;
   }
@@ -313,14 +301,8 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
-  .h-65 {
-    height: calc(var(--spacing) * 65);
-  }
   .h-65\.5 {
     height: calc(var(--spacing) * 65.5);
-  }
-  .h-70 {
-    height: calc(var(--spacing) * 70);
   }
   .h-70\.5 {
     height: calc(var(--spacing) * 70.5);
@@ -346,9 +328,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\.75 {
     width: calc(var(--spacing) * 3.75);
   }
@@ -361,23 +340,14 @@
   .w-25 {
     width: calc(var(--spacing) * 25);
   }
-  .w-28 {
-    width: calc(var(--spacing) * 28);
-  }
   .w-28\.5 {
     width: calc(var(--spacing) * 28.5);
-  }
-  .w-37 {
-    width: calc(var(--spacing) * 37);
   }
   .w-37\.5 {
     width: calc(var(--spacing) * 37.5);
   }
   .w-58 {
     width: calc(var(--spacing) * 58);
-  }
-  .w-111 {
-    width: calc(var(--spacing) * 111);
   }
   .w-111\.75 {
     width: calc(var(--spacing) * 111.75);
@@ -387,12 +357,6 @@
   }
   .w-\[82\%\] {
     width: 82%;
-  }
-  .w-\[82\.3\%\] {
-    width: 82.3%;
-  }
-  .w-\[82\.6\%\] {
-    width: 82.6%;
   }
   .w-\[82\.7\%\] {
     width: 82.7%;
@@ -421,18 +385,8 @@
   .max-w-full {
     max-width: 100%;
   }
-  .min-w-93 {
-    min-width: calc(var(--spacing) * 93);
-  }
   .min-w-93\.75 {
     min-width: calc(var(--spacing) * 93.75);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
@@ -442,20 +396,12 @@
     --tw-translate-x: calc(var(--spacing) * -20);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-x-17 {
-    --tw-translate-x: calc(var(--spacing) * 17);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-x-17\.5 {
     --tw-translate-x: calc(var(--spacing) * 17.5);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-x-full {
     --tw-translate-x: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -473,9 +419,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -546,10 +489,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
   }
   .border-3 {
     border-style: var(--tw-border-style);
@@ -647,9 +586,6 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
   }
@@ -658,9 +594,6 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
-  }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
   }
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
@@ -673,9 +606,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .align-middle {
-    vertical-align: middle;
   }
   .font-display {
     font-family: var(--font-display);
@@ -701,10 +631,6 @@
   }
   .text-\[30px\] {
     font-size: 30px;
-  }
-  .leading-4 {
-    --tw-leading: calc(var(--spacing) * 4);
-    line-height: calc(var(--spacing) * 4);
   }
   .leading-4\.25 {
     --tw-leading: calc(var(--spacing) * 4.25);
@@ -766,9 +692,6 @@
   .italic {
     font-style: italic;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -787,12 +710,6 @@
     --tw-shadow-color: color-mix(in srgb, #495dcf 5%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, #495dcf 5%, transparent) var(--tw-shadow-alpha), transparent);
-    }
-  }
-  .shadow-black {
-    --tw-shadow-color: #000;
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
     }
   }
   .shadow-black\/20 {
@@ -840,12 +757,6 @@
   .group-\[\.err\]\:block {
     &:is(:where(.group):is(.err) *) {
       display: block;
-    }
-  }
-  .group-\[\.menu\]\:translate-x-0 {
-    &:is(:where(.group):is(.menu) *) {
-      --tw-translate-x: calc(var(--spacing) * 0);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
   .group-\[\.menu\]\/parent\:translate-x-0 {
@@ -930,6 +841,46 @@
       @media (hover: hover) {
         color: var(--color-red-400);
       }
+    }
+  }
+  .focus-visible\:border-blue-600 {
+    &:focus-visible {
+      border-color: var(--color-blue-600);
+    }
+  }
+  .focus-visible\:border-gray-600 {
+    &:focus-visible {
+      border-color: var(--color-gray-600);
+    }
+  }
+  .focus-visible\:bg-white {
+    &:focus-visible {
+      background-color: var(--color-white);
+    }
+  }
+  .focus-visible\:fill-red-400 {
+    &:focus-visible {
+      fill: var(--color-red-400);
+    }
+  }
+  .focus-visible\:stroke-red-400 {
+    &:focus-visible {
+      stroke: var(--color-red-400);
+    }
+  }
+  .focus-visible\:text-blue-600 {
+    &:focus-visible {
+      color: var(--color-blue-600);
+    }
+  }
+  .focus-visible\:text-gray-600 {
+    &:focus-visible {
+      color: var(--color-gray-600);
+    }
+  }
+  .focus-visible\:text-red-400 {
+    &:focus-visible {
+      color: var(--color-red-400);
     }
   }
   .md\:top-0 {
@@ -1341,6 +1292,12 @@
       --tw-leading: 125%;
       line-height: 125%;
     }
+  }
+}
+@base {
+  * {
+    outline: none;
+    ring: none;
   }
 }
 @property --tw-translate-x {
